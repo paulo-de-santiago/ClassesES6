@@ -16,7 +16,7 @@ class Circle {
 //Cricle object instance has the draw method
 const circle = new Circle(1);
 console.log(circle);
-
+/*
 //STATIC METHODS
 const circles = Circle.parse('{"radius: 1"}');
 console.log(circles);
@@ -28,4 +28,4 @@ class Math2 {
   }
 }
 
-Math2.abs();
+Math2.abs(); */
