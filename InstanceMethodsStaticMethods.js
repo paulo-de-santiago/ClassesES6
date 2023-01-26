@@ -18,8 +18,8 @@ const circle = new Circle(1);
 console.log(circle);
 
 //STATIC METHODS
-const circle = Circle.parse('{"radius: 1"}');
-console.log(circle);
+const circles = Circle.parse('{"radius: 1"}');
+console.log(circles);
 //These are available on the class itself but not on the object instance. Used to create utility fucntions that are not specific to a given object
 
 class Math2 {

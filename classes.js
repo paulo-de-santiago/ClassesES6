@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* function Circle(radius) {
   this.radius = radius;
 }
