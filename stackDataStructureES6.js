@@ -21,19 +21,25 @@
 
 //Define which ones go in the constructor and which ones go in the prototype
 
+//keeping private, just accessing
+//initilize internal array
 const _stack = new WeakMap();
 
 class Stack {
   constructor() {
+    //setting an empty array
     _stack.set(this, []);
   }
 
   push(obj) {
+    //access to the array with get
     _stack.get(this).push(obj);
   }
 
   pop() {
+    //const items = _stack.get(this);
     if (_stack.length === 0) throw new Error("Stack is empty.");
+    //get the array
     return _stack.get(this).pop();
   }
 
@@ -44,7 +50,7 @@ class Stack {
 
     return stack[stacks.length - 1];
   }
-
+  //read only property, so using getter, get count()
   get count() {
     return _stack.get(this).length;
   }
