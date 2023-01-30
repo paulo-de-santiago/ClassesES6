@@ -1,5 +1,5 @@
 /* https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-return-largest-numbers-in-arrays/16042 */
-
+//You can work with multidimensional arrays by Array[Index][SubIndex]
 function largestOfFour(arr) {
   let results = [];
 
@@ -7,6 +7,7 @@ function largestOfFour(arr) {
     let largestNumber = arr[i][0];
     for (let j = 0; j < arr[i].length; j++) {
       if (arr[i][j] > largestNumber) {
+        console.log(arr[i][j]);
         largestNumber = arr[i][j];
       }
     }
